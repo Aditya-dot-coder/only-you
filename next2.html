@@ -5,7 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Story</title>
   <style>
-    body {
+    body
+    <!-- Background Music -->
+<div style="text-align: center; margin-top: 20px;">
+  <audio id="bg-music" autoplay loop>
+    <source src="song1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="toggleMusic()" style="
+    margin-top: 10px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  ">⏸️ Pause Music</button>
+</div>
+
+<script>
+  const music = document.getElementById('bg-music');
+  let isPlaying = true;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      music.pause();
+      event.target.innerText = '▶️ Play Music';
+    } else {
+      music.play();
+      event.target.innerText = '⏸️ Pause Music';
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
+{
       background: #fffafc;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #333;
