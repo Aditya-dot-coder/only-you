@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To the Loveliest</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    .next-btn {
+      margin-top: 25px;
+      padding: 10px 25px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .next-btn:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">💖</div>
+    <h1>Hey Love,</h1>
+    <p>
+      Just wanted to remind you something simple but powerful —<br/>
+      <strong>You are the most beautiful blessing in my life.</strong><br/><br/>
+      There’s no special occasion. No big reason.<br/>
+      Just... I thought of you, and I smiled.<br/>
+      Like I always do.<br/><br/>
+      Thank you for being you. For existing. For being mine.
+    </p>
+
+    <a href="next1.html" class="next-btn">Next Page ➡️</a>
+
+    <div class="footer">— With love, always 💌</div>
+  </div>
+</body>
+</html>
+
